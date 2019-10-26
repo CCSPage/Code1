@@ -18,6 +18,18 @@ void Ghost(float x, float y) {
       face(x,y);
     }
   }
+  if(x>width+5){
+    RightSide(width/2,height/2);
+  }
+   if(y>height+8){
+    DownSide(width/2,height/2);
+  }
+   if(x<0-5){
+    LeftSide(width/2,height/2);
+  }
+   if(y<0-10){
+    UpSide(width/2,height/2);
+  }
 }
 
 void head(float x, float y) {
