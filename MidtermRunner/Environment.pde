@@ -1,24 +1,3 @@
-//float floater;
-//float cloudX;
-//void Environment(float x, float y) {
-//  Clouds(x, y);
-
-//}
-
-//void Clouds(float x, float y) {
-//noStroke();
-//fill(77, 66, 105);
-//ellipse(x,y,100,70);
-//ellipse(x-60,y,100,70);
-//ellipse(x-30,y-30,80,70);
-
-
-//ellipse(x+300,y+200,80,70);
-//ellipse(x+250,y+200,80,70);
-//ellipse(x+200,y+200,90,70);
-//ellipse(x+250,y+170,80,70);
-//}
-
 Clouds[] c = new Clouds[10];
 
 void Cloud(float x, float y) {

@@ -5,6 +5,7 @@ void StartScreen(float x, float y) {
   fill(104, 93, 132);
   text("SPOOKY SEASON", x-110, y);
   textSize(15);
-  text("Time to explore", x-55, y+45);
-  text("Arrows to move", x-54, y+70);
+  //text("Time to explore!", x-55, y+45);
+  text("Arrows to move", x-54, y+45);
+    text("Any key to begin", x-58, y+70);
 }

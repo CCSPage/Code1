@@ -24,6 +24,9 @@ void draw() {
     textSize(15);
     fill(104, 93, 132, 0);
     text("Score: "+score, 50, 50);
+    fill(40,30,70,90);
+          text("Time to explore!", 25, 35);
+      text("If lost at anytime, 'R' will bring you home...", 25, 55);
     for (int j = 0; j < c.length; j+=2) {
       c[j].update();
       c[j].display();
@@ -35,7 +38,7 @@ void draw() {
     
     Ghost(width/2+Side, height/2+Up);
   }
- 
+
 }
 
 void keyPressed() {
@@ -54,4 +57,9 @@ void keyPressed() {
 
     Up=0;
   }
+  
+    if (key == 'r') { //RESTART
+    score=0;
+    Ghost(width/2+Side, height/2+Up);
+   }
 }

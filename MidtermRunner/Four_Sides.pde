@@ -13,6 +13,9 @@ void RightSide(float x, float y) {
     ellipse(width/2+30, height/2+60, 20, 20);
     ellipse(width/2+30, height/2+40, 20, 25);
   }
+  textSize(15);
+  fill(255, 60);
+  text("Click for a surprise!", 20, 385);
 }
 
 void LeftSide(float x, float y) {
@@ -28,13 +31,15 @@ void LeftSide(float x, float y) {
   triangle(270, 345, 308, 270, 346, 345);
   if (mousePressed) {
     fill(255);
-    ellipse(300,320,10,10);
-    ellipse(315,320,10,10);
+    ellipse(300, 320, 10, 10);
+    ellipse(315, 320, 10, 10);
     fill(0);
-       ellipse(300,320,5,5);
-    ellipse(315,320,5,5);
-
+    ellipse(300, 320, 5, 5);
+    ellipse(315, 320, 5, 5);
   }
+  textSize(15);
+  fill(255, 20);
+  text("Click for a surprise!", 20, 385);
 }
 
 void UpSide(float x, float y) {
@@ -42,11 +47,11 @@ void UpSide(float x, float y) {
   rect(x, y, width, height);
   textSize(30);
   fill(135, 147, 161);
-  text("MIDNIGHT MOON", x-130, y+40);
+  text("MIDNIGHT MOON", x-130, y+45);
   fill(252, 245, 222);
-  ellipse(width/2, height/2-100, 100, 100);
+  ellipse(width/2, height/2-70, 100, 100);
   fill(47, 59, 71);
-  ellipse(width/2+50, height/2-100, 100, 100);
+  ellipse(width/2+50, height/2-70, 100, 100);
   if (mousePressed) {
     for (int i =50; i<width; i+=50) {
       for (int j =50; j<height; j+=50) {
@@ -56,6 +61,9 @@ void UpSide(float x, float y) {
       }
     }
   }
+  textSize(15);
+  fill(255, 20);
+  text("Click for a surprise!", 20, 385);
 }
 
 void DownSide(float x, float y) {
@@ -78,4 +86,7 @@ void DownSide(float x, float y) {
     ellipse(width/2-20, height/2+110, 10, 10);
     ellipse(width/2+20, height/2+110, 10, 10);
   }
+  textSize(15);
+  fill(255, 20);
+  text("Click for a surprise!", 20, 385);
 }
