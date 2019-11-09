@@ -12,6 +12,9 @@ void RightSide(float x, float y) {
     fill(242, 165, 153);
     ellipse(width/2+30, height/2+60, 20, 20);
     ellipse(width/2+30, height/2+40, 20, 25);
+    booPath = sketchPath(Boo);
+    file = new SoundFile(this, booPath);
+    file.play();
   }
   textSize(15);
   fill(255, 60);
@@ -36,6 +39,9 @@ void LeftSide(float x, float y) {
     fill(0);
     ellipse(300, 320, 5, 5);
     ellipse(315, 320, 5, 5);
+      booPath = sketchPath(Boo);
+    file = new SoundFile(this, booPath);
+    file.play();
   }
   textSize(15);
   fill(255, 20);
@@ -53,6 +59,9 @@ void UpSide(float x, float y) {
   fill(47, 59, 71);
   ellipse(width/2+50, height/2-70, 100, 100);
   if (mousePressed) {
+              booPath = sketchPath(Boo);
+    file = new SoundFile(this, booPath);
+    file.play();
     for (int i =50; i<width; i+=50) {
       for (int j =50; j<height; j+=50) {
         fill(255, 20);
@@ -81,6 +90,9 @@ void DownSide(float x, float y) {
     fill(255, 219, 102);
     ellipse(width/2-20, height/2+110, 10, 10);
     ellipse(width/2+20, height/2+110, 10, 10);
+      booPath = sketchPath(Boo);
+    file = new SoundFile(this, booPath);
+    file.play();
   } else {
     fill(0);
     ellipse(width/2-20, height/2+110, 10, 10);

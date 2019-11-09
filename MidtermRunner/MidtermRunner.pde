@@ -1,7 +1,18 @@
+import processing.sound.*;
+SoundFile file;
+String audioName = "Spooky.mp3";
+String Boo = "Boo.wav";
+String path;
+String booPath;
+
 float score;
 float Up;
 float Side;
 void setup() {
+ path = sketchPath(audioName);
+ file = new SoundFile(this,path);
+ file.play();
+  
   size(600, 400);
   rectMode(CENTER);
   Up=0;
